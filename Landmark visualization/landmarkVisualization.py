@@ -160,12 +160,12 @@ def visualize_landmarks_video(data_array, video_idx, handsign_idx, output_path):
 
 
 # Load the saved landmarks data
-data_array = np.load('#NEW SHAPE/handsigns_data.npy')
+data_array = np.load('../handsigns_data.npy')
 
 # Specify the video and handsign indices
-video_idx = 2 # Change this to visualize different videos
+video_idx = 4 # Change this to visualize different videos
 handsign_idx = 0  # Change this to visualize different handsigns
-output_path = '#NEW SHAPE/Landmark visualization/landmarks_visualization.mp4'
+output_path = './video.mp4'
 
 # Visualize landmarks and save the video
 visualize_landmarks_video(data_array, video_idx, handsign_idx, output_path)
