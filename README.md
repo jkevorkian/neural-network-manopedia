@@ -9,3 +9,16 @@ This is to manually ensure the landmarks are being captured correctly before tra
 dataset we are currently using was obtained from here: https://facundoq.github.io/datasets/lsa64/
 
 PYTHON VERSION INSTALLED NEEDS TO BE 3.12 FOR THIS TO WORK
+
+
+How to set up:
+-
+download dataset from https://facundoq.github.io/datasets/lsa64/ 
+put them in the TestDataset folder following the structure
+    TestDateset
+        -handsign_1
+        -handsign_2
+        -handsign_3
+and so on
+
+Also dont forget to modify the data shape parameters on the first cell of the building-and-training.ipynb notebook so it matches the dataset being used.
