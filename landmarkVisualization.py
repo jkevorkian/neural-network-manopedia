@@ -160,7 +160,7 @@ def visualize_landmarks_video(data_array, video_idx, handsign_idx, output_path):
 
 
 # Load the saved landmarks data
-data_array = np.load('../handsigns_data.npy')
+data_array = np.load('../../hand_landmarks.npy')
 
 # Specify the video and handsign indices
 video_idx = 4 # Change this to visualize different videos

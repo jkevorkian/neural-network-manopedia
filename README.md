@@ -4,3 +4,8 @@ Also, the parameters on the first section of the notebook need to be adjusted ac
 
 In the Landmark visualization folder you will find a scrit that takes the landmarks extracted from the dataset videos and shows you in an .mp4 file output how any one video's landmarks look like. 
 This is to manually ensure the landmarks are being captured correctly before training on a big dataset.
+
+
+dataset we are currently using was obtained from here: https://facundoq.github.io/datasets/lsa64/
+
+PYTHON VERSION INSTALLED NEEDS TO BE 3.12 FOR THIS TO WORK
