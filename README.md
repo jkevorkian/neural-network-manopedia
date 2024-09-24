@@ -15,10 +15,19 @@ How to set up:
 -
 download dataset from https://facundoq.github.io/datasets/lsa64/ 
 put them in the TestDataset folder following the structure
-    TestDateset
-        -handsign_1
-        -handsign_2
-        -handsign_3
+    
+TestDateset (folder)
+-
+        -handsign_1 (subfolder)
+        -handsign_2 (subfolder)
+        -handsign_3 (subfolder)
 and so on
 
 Also dont forget to modify the data shape parameters on the first cell of the building-and-training.ipynb notebook so it matches the dataset being used.
+
+To install dependencies
+-
+open a cmd on the root folder and (having python already installed on your system) type "pip install -r .\requirements.txt"
+this should install all necessary dependencies for the project.
+
+if this doesn't work try doing a "pip install pipreqs" on the same cmd and then going back to the first command
