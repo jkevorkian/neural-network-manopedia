@@ -19,8 +19,8 @@ def draw_landmarks(frame, landmarks):
     for i, (x, y, z) in enumerate(landmarks):
         # Convert normalized coordinates to pixel coordinates
         height, width, _ = frame.shape
-        x_px = int(x * width-1500)
-        y_px = int(y * height-700)
+        x_px = int(x * width+1500)
+        y_px = int(y * height+700)
         # Draw the landmark as a small circle
         cv2.circle(frame, (x_px, y_px), 5, (0, 255, 0), -1)
 
@@ -58,8 +58,8 @@ def visualize_landmarks_video(data_array, video_idx, handsign_idx, output_path):
 data_array = np.load('handsigns_data.npy')
 
 # Specify the video and handsign indices
-video_idx = 60 # Change this to visualize different videos
-handsign_idx = 1  # Change this to visualize different handsigns
+video_idx =45 # Change this to visualize different videos
+handsign_idx = 0  # Change this to visualize different handsigns (begins at 0)
 output_path = './video.mp4'
 
 # Visualize landmarks and save the video
