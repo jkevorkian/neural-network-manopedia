@@ -12,7 +12,7 @@ def organize_videos(input_folder):
             # Extract the first three digits and subtract 1
             try:
                 first_three_numbers = int(file_name[:3])
-                folder_index = first_three_numbers - 1
+                folder_index = first_three_numbers
                 folder_name = f"handsign_{folder_index}"
                 
                 # Create the destination folder if it doesn't exist
@@ -29,7 +29,7 @@ def organize_videos(input_folder):
                 print(f"Skipping {file_name}, not starting with a number.")
 
 # Define your input folder path
-input_folder = "all_cut"
+input_folder = "FullDatasetCut"
 
 # Call the function
 organize_videos(input_folder)
