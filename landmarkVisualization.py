@@ -5,15 +5,6 @@ import numpy as np
 
 ###     VISUALIZATION      ###
 
-# Define the parameters for the data shape
-videos_per_handsign = 136  # Adjust if necessary
-frames_per_video = 10
-num_landmarks = 51
-num_coordinates = 3
-
-data_augmentation = True
-num_augmented_versions = 3  # How many videos will be created from augmenting each video from the dataset
-
 # Define the root directory containing handsign folders
 root_path = "ACOTADONomenclatedDataset"
 
@@ -171,11 +162,11 @@ def visualize_landmarks_video(data_array, video_idx, handsign_idx, output_path):
 
 
 # Load the saved landmarks data
-data_array = np.load('handsigns_data.npy')
+data_array = np.load('handsigns_data_augmented.npy')
 
 # Specify the video and handsign indices
-video_idx = 0 # Change this to visualize different videos
-handsign_idx = 0  # Change this to visualize different handsigns (begins at 0)
+video_idx =     0        # Change this to visualize different videos
+handsign_idx =  3        # Change this to visualize different handsigns (begins at 0)
 output_path = './video.mp4'
 
 # Visualize landmarks and save the video
